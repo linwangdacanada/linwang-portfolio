@@ -5,98 +5,266 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lin Wang | Data Analyst Portfolio</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
       line-height: 1.6;
+      background-color: #f4f6f9;
       color: #222;
-      background: #f9f9f9;
     }
-    h1, h2 {
-      color: #1f3c88;
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 30px 20px 60px;
     }
+
+    .hero {
+      background: white;
+      border-radius: 16px;
+      padding: 40px 32px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 2.3rem;
+      color: #1f4aa8;
+    }
+
+    h2 {
+      color: #1f4aa8;
+      margin-top: 0;
+      margin-bottom: 18px;
+      font-size: 1.8rem;
+    }
+
+    h3 {
+      margin-bottom: 10px;
+      color: #1f4aa8;
+      font-size: 1.5rem;
+    }
+
+    p {
+      margin-bottom: 16px;
+      font-size: 1.05rem;
+    }
+
+    .skills {
+      margin: 18px 0;
+      font-size: 1.05rem;
+    }
+
+    .button-group {
+      margin-top: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+
+    .btn-primary {
+      background-color: #1f4aa8;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background-color: #17397f;
+    }
+
+    .btn-secondary {
+      background-color: #e8eefc;
+      color: #1f4aa8;
+    }
+
+    .btn-secondary:hover {
+      background-color: #d8e3fb;
+    }
+
     .section {
       background: white;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+      margin-bottom: 24px;
     }
-    a {
-      color: #1f3c88;
-      text-decoration: none;
+
+    .project {
+      margin-bottom: 28px;
     }
-    a:hover {
-      text-decoration: underline;
+
+    .project:last-child {
+      margin-bottom: 0;
     }
+
     ul {
-      padding-left: 20px;
+      padding-left: 24px;
+      margin-top: 8px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      font-size: 1.02rem;
+    }
+
+    .tag {
+      display: inline-block;
+      background-color: #eef3ff;
+      color: #1f4aa8;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      margin: 4px 8px 4px 0;
+    }
+
+    .footer {
+      text-align: center;
+      color: #666;
+      font-size: 0.95rem;
+      margin-top: 30px;
+    }
+
+    a {
+      color: #1f4aa8;
+    }
+
+    @media (max-width: 700px) {
+      h1 {
+        font-size: 1.9rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .hero,
+      .section {
+        padding: 24px 20px;
+      }
     }
   </style>
 </head>
 <body>
+  <div class="container">
 
-  <div class="section">
-    <h1>Lin Wang | Data Analyst Portfolio</h1>
-    <p>
-      Hi, I’m Lin Wang, a Data Analysis student at Nova Scotia Community College with a background in Statistics from Dalhousie University.
-    </p>
-    <p>
-      I have hands-on experience working with real-world healthcare data through a government project, where I built dashboards to support decision-making.
-    </p>
-    <p>
-      <strong>Skills:</strong> SQL, Python, Power BI, Excel, Data Visualization
-    </p>
-    <p>
-      I am currently seeking co-op or entry-level opportunities in data analysis, business intelligence, or IT-related roles.
-    </p>
+    <section class="hero">
+      <h1>Lin Wang | Data Analyst Portfolio</h1>
+      <p>
+        Hi, I’m Lin Wang, a Data Analysis student at Nova Scotia Community College
+        with a background in Statistics from Dalhousie University.
+      </p>
+      <p>
+        I have hands-on experience working with real-world healthcare data through
+        a government project, where I built dashboards to support decision-making.
+      </p>
+
+      <div class="skills">
+        <strong>Skills:</strong>
+        <span class="tag">SQL</span>
+        <span class="tag">Python</span>
+        <span class="tag">Power BI</span>
+        <span class="tag">Excel</span>
+        <span class="tag">Data Visualization</span>
+        <span class="tag">Dashboard Design</span>
+      </div>
+
+      <p>
+        I am currently seeking co-op or entry-level opportunities in data analysis,
+        business intelligence, or IT-related roles.
+      </p>
+
+      <div class="button-group">
+        <a class="btn btn-primary" href="resume.pdf" target="_blank">View Resume</a>
+        <a class="btn btn-secondary" href="https://github.com/linwangdacanada" target="_blank">GitHub</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>About Me</h2>
+      <p>
+        I enjoy turning raw data into clear, useful insights. My academic background
+        in statistics and data analysis has helped me build strong skills in data
+        cleaning, reporting, dashboard development, and problem-solving.
+      </p>
+      <p>
+        I am especially interested in opportunities where I can support decision-making,
+        improve reporting processes, and work with data in a practical business or
+        government environment.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>1. Emergency Health Services (EHS) Data Dashboard</h3>
+        <p><strong>Problem:</strong> Stakeholders needed better visibility into ambulance performance and operational delays.</p>
+        <p><strong>Tools:</strong> Power BI, SQL, Excel</p>
+        <p><strong>My Contribution:</strong></p>
+        <ul>
+          <li>Cleaned and validated healthcare data from multiple sources</li>
+          <li>Built interactive dashboards to track operational performance</li>
+          <li>Defined KPIs with stakeholders to support reporting needs</li>
+          <li>Improved data clarity for decision-making</li>
+        </ul>
+        <p><strong>Outcome:</strong> Created dashboards that helped monitor performance trends and identify service delays.</p>
+      </div>
+
+      <div class="project">
+        <h3>2. E-commerce KPI Dashboard</h3>
+        <p><strong>Problem:</strong> The dataset needed to be cleaned and transformed into useful business insights.</p>
+        <p><strong>Tools:</strong> Power BI, Excel</p>
+        <p><strong>My Contribution:</strong></p>
+        <ul>
+          <li>Cleaned and structured 10,000+ transaction records</li>
+          <li>Created KPIs such as total sales, average order value, and trend indicators</li>
+          <li>Built dashboard visuals to show sales performance and customer patterns</li>
+        </ul>
+        <p><strong>Outcome:</strong> Produced a dashboard that clearly presented trends and supported data-driven analysis.</p>
+      </div>
+
+      <div class="project">
+        <h3>3. Hospital Data Management System</h3>
+        <p><strong>Problem:</strong> Hospital information needed a more organized database structure for tracking and reporting.</p>
+        <p><strong>Tools:</strong> SQL, Database Design</p>
+        <p><strong>My Contribution:</strong></p>
+        <ul>
+          <li>Designed a relational database with 10+ tables</li>
+          <li>Created queries for data retrieval and reporting</li>
+          <li>Defined relationships and supported data integrity</li>
+        </ul>
+        <p><strong>Outcome:</strong> Improved data organization and made information easier to manage and access.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Resume</h2>
+      <p>
+        My resume is available here:
+        <a href="resume.pdf" target="_blank">Download Resume (PDF)</a>
+      </p>
+      <p>
+        Replace <strong>resume.pdf</strong> with your actual uploaded resume file name.
+      </p>
+    </section>
+
+    <div class="footer">
+      <p>© 2026 Lin Wang | Data Analyst Portfolio</p>
+    </div>
+
   </div>
-
-  <div class="section">
-    <h2>Resume</h2>
-    <p>Add your resume PDF link here later.</p>
-  </div>
-
-  <div class="section">
-    <h2>Project 1: Emergency Health Services (EHS) Data Dashboard</h2>
-    <p><strong>Overview:</strong> Analyzed healthcare data to improve visibility into ambulance performance.</p>
-    <p><strong>Tools:</strong> Power BI, SQL, Excel</p>
-    <p><strong>What I did:</strong></p>
-    <ul>
-      <li>Cleaned and validated data</li>
-      <li>Built interactive dashboards</li>
-      <li>Defined KPIs with stakeholders</li>
-    </ul>
-    <p><strong>Result:</strong> Helped monitor performance and identify delays in ambulance services.</p>
-  </div>
-
-  <div class="section">
-    <h2>Project 2: E-commerce KPI Dashboard</h2>
-    <p><strong>Overview:</strong> Analyzed online retail data to understand sales trends.</p>
-    <p><strong>Tools:</strong> Power BI, Excel</p>
-    <p><strong>What I did:</strong></p>
-    <ul>
-      <li>Cleaned 10,000+ records</li>
-      <li>Created KPIs</li>
-      <li>Built dashboards</li>
-    </ul>
-    <p><strong>Result:</strong> Provided insights into sales and customer behavior.</p>
-  </div>
-
-  <div class="section">
-    <h2>Project 3: Hospital Data Management System</h2>
-    <p><strong>Overview:</strong> Designed a database system for hospital operations.</p>
-    <p><strong>Tools:</strong> SQL, Database Design</p>
-    <p><strong>What I did:</strong></p>
-    <ul>
-      <li>Designed relational database with 10+ tables</li>
-      <li>Created queries for reporting</li>
-      <li>Ensured data integrity</li>
-    </ul>
-    <p><strong>Result:</strong> Improved data organization and accessibility.</p>
-  </div>
-
 </body>
 </html>
